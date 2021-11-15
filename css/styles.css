@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #1f2235;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cfd0d4;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #23263a;
+  padding: 3rem;
+  align-items: center;
+}
+
+.header div ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header div ul li {
+  font-size: 1.2rem;
+}
+
+.header div ul li i {
+  color: #ed4b54;
+}
+
+.header h1 {
+  color: #cfd0d4;
+  font-size: 2rem;
+}
+
+.header p {
+  color: #cfd0d4;
+}
+
+.header span {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header span button {
+  background-color: transparent;
+  border: 2px solid #ed4b54;
+  color: #cfd0d4;
+  padding: 0.5rem 0.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header span button.primary {
+  background-color: #ed4b54;
+  color: #23263a;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.services {
+  padding: 1rem 3rem;
+  flex-direction: column;
+  background-color: #1f2235;
+  display: flex;
+  justify-content: center;
+}
+
+.services header {
+  padding: 1rem 0;
+  text-align: center;
+  color: #cfd0d4;
+}
+
+.services header h2 {
+  font-size: 2rem;
+}
+
+.services ul {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.services ul li {
+  position: relative;
+  border-radius: 5px;
+  background-color: #23263a;
+  flex: 0 1 200px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  user-select: none;
+  color: #cfd0d4;
+}
+
+.services ul li::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ed4b54;
+}
+
+.services ul li:hover:before {
+  transform: scaleX(1);
+}
+
+.services ul li:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  border-bottom: 2px solid #ed4b54;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transform: scaleX(0);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.services ul li i {
+  color: #ed4b54;
+  font-size: 2rem;
+}
+
+.services ul li p {
+  flex-grow: 1;
+}
+
+.experience {
+  padding: 3rem;
+  background-color: #23263a;
+  color: #cfd0d4;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience header {
+  text-align: center;
+}
+
+.experience header h2 {
+  font-size: 2rem;
+}
+
+.experience div {
+  padding: 10px;
+}
+
+.experience ul {
+  position: relative;
+}
+
+.experience ul::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #9d383d;
+  margin-left: -2rem;
+}
+
+.experience ul li {
+  position: relative;
+}
+.experience ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.experience ul li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c54349;
+  margin-left: -2.25rem;
+}
+
+.experience ul li span {
+  font-style: italic;
+}
+
+.experience ul li h3 {
+  font-size: 1.5rem;
+}
+
+.experience ul li h4 {
+  font: 1.2rem;
+  font-weight: 600;
+}
