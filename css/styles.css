@@ -35,10 +35,50 @@ nav ul {
   gap: 0.5rem;
 }
 
-@media only screen and (max-width: 768px) {
-  nav ul {
-    display: none;
-  }
+nav button {
+  display: none;
+}
+
+nav.open ul {
+  position: fixed;
+  z-index: 5;
+  margin: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #23263a;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: scaleY(1);
+  min-height: 100vh;
+  transition: all 0.2s ease-out;
+}
+
+nav button.close {
+  display: none;
+}
+
+nav.open ul li {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav.open button.close {
+  right: 2rem;
+  position: fixed;
+  display: block;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+
+nav.open ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+nav.open button {
+  display: none;
 }
 
 .header {
@@ -137,6 +177,7 @@ li {
   height: 170px;
   user-select: none;
   color: #cfd0d4;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 425px) {
@@ -248,4 +289,28 @@ li {
 .experience ul li h4 {
   font: 1.2rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+  }
+  .header {
+    padding-top: 5rem;
+  }
+  nav:not(.open) ul {
+    transform: scaleY(0);
+    overflow: hidden;
+  }
+
+  nav button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    display: block;
+    color: #cfd0d4;
+    cursor: pointer;
+  }
 }

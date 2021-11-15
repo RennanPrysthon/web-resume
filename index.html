@@ -14,16 +14,22 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="top">
     <h1>Rennan</h1>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a> </li>
-      <li><a href="#">Experience</a></li>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#services">Services</a> </li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#">Skills</a> </li>
       <li><a href="#">Portfolio</a> </li>
       <li><a href="#">Contact</a> </li>
     </ul>
+    <button>
+      <i class="fas fa-bars"></i>
+    </button>
+    <button class="close">
+      <i class="fas fa-times-circle"></i>
+    </button>
   </nav>
   <header class="header">
     <div>
@@ -45,7 +51,7 @@
         <button class="primary">Contact me</button>
       </span>
   </header>
-  <section class="services">
+  <section id="services" class="services">
     <header>
       <h2>My Services</h2>
       <p>All services that I work with</p>
@@ -76,10 +82,9 @@
         <h3>Backend</h3>
         <p>Create backend apis using Spring Boot</p>
       </li>
-  
     </ul>
   </section>
-  <section class="experience">
+  <section id="experience" class="experience">
     <header>
       <h2>Experience</h2>
       <p>My experience through the years</p>
@@ -128,6 +133,7 @@
       </ul>
     </div>
   </section>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
