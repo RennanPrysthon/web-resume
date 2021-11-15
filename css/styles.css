@@ -17,7 +17,7 @@ body {
 
 nav {
   background-color: #1f2235;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,12 +35,22 @@ nav ul {
   gap: 0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
   background-color: #23263a;
-  padding: 3rem;
+  padding: 2rem;
   align-items: center;
+}
+
+.header div {
+  width: 100%;
 }
 
 .header div ul {
@@ -92,7 +102,7 @@ li {
 }
 
 .services {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   flex-direction: column;
   background-color: #1f2235;
   display: flex;
@@ -100,7 +110,7 @@ li {
 }
 
 .services header {
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
   color: #cfd0d4;
 }
@@ -110,11 +120,9 @@ li {
 }
 
 .services ul {
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
   justify-content: center;
 }
 
@@ -122,11 +130,11 @@ li {
   position: relative;
   border-radius: 5px;
   background-color: #23263a;
-  flex: 0 1 200px;
-  padding: 1.5rem;
+  flex: 0 1 170px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 170px;
   user-select: none;
   color: #cfd0d4;
 }
@@ -163,7 +171,8 @@ li {
 
 .services ul li i {
   color: #ed4b54;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .services ul li p {
@@ -171,7 +180,7 @@ li {
 }
 
 .experience {
-  padding: 3rem;
+  padding: 1rem 2rem;
   background-color: #23263a;
   color: #cfd0d4;
   display: flex;
@@ -179,6 +188,7 @@ li {
 }
 
 .experience header {
+  padding: 1rem;
   text-align: center;
 }
 
