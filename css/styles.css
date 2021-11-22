@@ -42,7 +42,7 @@ nav button {
 nav .mobile-bnt {
   width: 35px;
   height: 30px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -62,8 +62,23 @@ nav .mobile-bnt span {
   transition: all 0.2s ease-in;
 }
 
+nav .mobile-bnt span:nth-child(1) {
+  animation: close-bar1 0.9s;
+  animation-fill-mode: forwards;
+}
+
+nav .mobile-bnt span:nth-child(2) {
+  opacity: 1;
+}
+
+nav .mobile-bnt span:nth-child(3) {
+  animation: close-bar2 0.9s;
+  animation-fill-mode: forwards;
+}
+
 nav.open .mobile-bnt span:nth-child(1) {
-  transform: translateY(10px) rotate(-50deg);
+  animation: open-bar1 0.9s;
+  animation-fill-mode: forwards;
 }
 
 nav.open .mobile-bnt span:nth-child(2) {
@@ -71,7 +86,50 @@ nav.open .mobile-bnt span:nth-child(2) {
 }
 
 nav.open .mobile-bnt span:nth-child(3) {
-  transform: translateY(-10px) rotate(50deg);
+  animation: open-bar2 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open-bar1 {
+  50% {
+    transform: translateY(10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(10px) rotate(-50deg);
+  }
+}
+
+@keyframes open-bar2 {
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(50deg);
+  }
+}
+
+@keyframes close-bar1 {
+  0% {
+    transform: translateY(10px) rotate(-50deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes close-bar2 {
+  0% {
+    transform: translateY(-10px) rotate(50deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 nav.open ul {
@@ -322,5 +380,9 @@ li {
   nav:not(.open) ul {
     transform: scaleY(0);
     overflow: hidden;
+  }
+
+  nav .mobile-bnt {
+    display: flex;
   }
 }
