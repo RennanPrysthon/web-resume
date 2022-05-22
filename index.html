@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Rennan Prysthon" />
     <meta name="description" content="Rennan's web portfolio" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
     <title>Rennan Prysthon Resume</title>
   </head>
   <body>
     <nav id="top">
+     <div class="container d-flex align-items-center">
       <h1>Rennan</h1>
-      <ul>
+      <ul class="mb-0">
         <li><a href="#header">Home</a></li>
         <li><a href="#services">Services</a> </li>
         <li><a href="#experience">Experience</a></li>
@@ -24,10 +29,10 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-
+     </div>
     </nav>
     <header class="header">
-      <div>
+      <div class="container">
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/rennanprysthon" target="blank"><i class="fab fa-linkedin"></i></a>
@@ -47,82 +52,86 @@
         </span>
     </header>
     <section id="services" class="services">
-      <header>
-        <h2>My Services</h2>
-        <p>All services that I work with</p>
-      </header>
-      <ul>
-        <li>
-          <i class="fab fa-react"></i>
-          <h3>Frontend Development</h3>
-          <p>
-            I develop web apps, using React
-            liberay or Angular framwork
-          </p>
-        </li>
-        <li>
-          <i class="fab fa-android"></i>
-          <h3>Mobile Development</h3>
-          <p>
-            I develop mobile apps for android using React Native
-          </p>
-        </li>
-        <li>
-          <i class="fab fa-apple"></i>
-          <h3>IOS Development</h3>
-          <p>(Still need a macbook for this)</p>
-        </li>
-        <li>
-          <i class="fab fa-java"></i>
-          <h3>Backend</h3>
-          <p>Create backend apis using Spring Boot</p>
-        </li>
-      </ul>
-    </section>
-    <section id="experience" class="experience">
-      <header>
-        <h2>Experience</h2>
-        <p>My experience through the years</p>
-      </header>
-      <div>
+      <div class="container">
+        <header>
+          <h2>My Services</h2>
+          <p>All services that I work with</p>
+        </header>
         <ul>
           <li>
-            <span>Julho 2020 - Atualmente</span>
-            <h3>Liferay</h3>
-            <h4>Engenheiro de Software Pleno</h4>
+            <i class="fab fa-react"></i>
+            <h3>Frontend Development</h3>
             <p>
-              Desenvolvimento com Java (JAX RS), React, SASS,
-              FreeMarker e Liferay
+              I develop web apps, using React
+              liberay or Angular framwork
             </p>
           </li>
           <li>
-            <span>Setembro 2020 - Junho 2021</span>
-            <h3>Mv Sistemas</h3>
-            <h4>Desenvolvedor 3</h4>
+            <i class="fab fa-android"></i>
+            <h3>Mobile Development</h3>
             <p>
-              Desenvolvimento com Spring MVC, AngularJS,
-              PL/SQL no Oracle 11, XML e rest api
+              I develop mobile apps for android using React Native
             </p>
           </li>
           <li>
-            <span>Dezembro 2019 - Agosto 2020</span>
-            <h3>IVIA</h3>
-            <h4>Desenvolvedor Júnior</h4>
-            <p>
-              Desenvolvimento com Java web, usando
-              servidor wildfly com Java EJB, JSP e
-              banco de dados IBM DB2
-            </p>
+            <i class="fab fa-apple"></i>
+            <h3>IOS Development</h3>
+            <p>(Still need a macbook for this)</p>
           </li>
           <li>
-            <span>Agosto 2019 - Novembro 2019</span>
-            <h3>Unidac | MV Sistemas</h3>
-            <h4>Estagiário</h4>
-            <p>
-              Desenvolvimento com Spring Boot, React Native e Angular 7+
-            </p>
+            <i class="fab fa-java"></i>
+            <h3>Backend</h3>
+            <p>Create backend apis using Spring Boot</p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <div class="container">
+        <header>
+          <h2>Experience</h2>
+          <p>My experience through the years</p>
+        </header>
+        <div>
+          <ul>
+            <li>
+              <span>Julho 2020 - Atualmente</span>
+              <h3>Liferay</h3>
+              <h4>Engenheiro de Software Pleno</h4>
+              <p>
+                Desenvolvimento com Java (JAX RS), React, SASS,
+                FreeMarker e Liferay
+              </p>
+            </li>
+            <li>
+              <span>Setembro 2020 - Junho 2021</span>
+              <h3>Mv Sistemas</h3>
+              <h4>Desenvolvedor 3</h4>
+              <p>
+                Desenvolvimento com Spring MVC, AngularJS,
+                PL/SQL no Oracle 11, XML e rest api
+              </p>
+            </li>
+            <li>
+              <span>Dezembro 2019 - Agosto 2020</span>
+              <h3>IVIA</h3>
+              <h4>Desenvolvedor Júnior</h4>
+              <p>
+                Desenvolvimento com Java web, usando
+                servidor wildfly com Java EJB, JSP e
+                banco de dados IBM DB2
+              </p>
+            </li>
+            <li>
+              <span>Agosto 2019 - Novembro 2019</span>
+              <h3>Unidac | MV Sistemas</h3>
+              <h4>Estagiário</h4>
+              <p>
+                Desenvolvimento com Spring Boot, React Native e Angular 7+
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <script src="js/main.js"></script>

@@ -15,6 +15,17 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+ul, li, h1 {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   background-color: #1f2235;
   padding: 1rem 2rem;
@@ -212,11 +223,7 @@ nav.open ul li:not(:last-child) {
   color: #23263a;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
+
 
 .services {
   padding: 1rem 2rem;
@@ -251,7 +258,7 @@ li {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  height: 170px;
+  min-height: 170px;
   user-select: none;
   color: #cfd0d4;
   z-index: 0;
