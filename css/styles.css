@@ -29,9 +29,6 @@ ul, li, h1 {
 nav {
   background-color: #1f2235;
   padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #cfd0d4;
 }
 
@@ -40,7 +37,6 @@ nav h1 {
 }
 
 nav ul {
-  display: flex;
   flex: 1 1 50%;
   justify-content: flex-end;
   gap: 0.5rem;
