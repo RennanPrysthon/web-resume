@@ -135,7 +135,6 @@ nav.open ul li:not(:last-child) {
 .header {
   display: flex;
   flex-direction: column;
-  background-color: var(--tertiary);
   padding: 2rem;
   align-items: center;
 }
@@ -191,7 +190,6 @@ nav.open ul li:not(:last-child) {
 .services {
   padding: 1rem 2rem;
   flex-direction: column;
-  background-color: var(--secondary);
   display: flex;
   justify-content: center;
 }
@@ -275,7 +273,6 @@ nav.open ul li:not(:last-child) {
 
 .experience {
   padding: 1rem 2rem;
-  background-color:  var(--secondary);
   color: var(--grey);
   display: flex;
   flex-direction: column;
