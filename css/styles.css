@@ -172,10 +172,10 @@ nav.open ul li:not(:last-child) {
 }
 
 .header span button {
+  padding: 10px 20px;
   background-color: transparent;
   border: 2px solid var(--primary);
   color: var(--grey);
-  padding: 0.5rem 0.25rem;
   border-radius: 5px;
   cursor: pointer;
 }
