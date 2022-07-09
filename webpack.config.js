@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "./static"),
+    path: "/",
     filename: "[name].bundle.js",
     chunkFilename: "[id].[chunkhash].js",
   },
